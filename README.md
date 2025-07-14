@@ -1,13 +1,96 @@
-# React + Vite
+# 📝 React Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal yet powerful Todo application built using **React** and **Tailwind CSS**. It allows users to add, edit, mark complete, and delete tasks. The app stores tasks in **localStorage**, ensuring your list persists after page reloads.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ Add new tasks with input validation (at least 3 letters & one alphabet)
+- ✏️ Edit tasks inline
+- ✔️ Mark tasks as completed
+- 🗑️ Delete individual tasks
+- 🔄 Tasks persist via localStorage
+- 💻 Responsive layout with Tailwind CSS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Todo-List-with-React
+---
+
+## 🛠 Tech Stack
+
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/) (via CDN)
+- [Vite](https://vitejs.dev/)
+- JavaScript (ES6+)
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── App.jsx         # Main logic and layout
+├── TodoItem.jsx    # Single task item component
+└── main.jsx        # React DOM entry point
+```
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone this repository
+
+```bash
+git clone https://github.com/your-username/react-todo-app.git
+cd react-todo-app
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Start the development server
+
+```bash
+npm run dev
+```
+
+Open `http://localhost:5173` in your browser.
+
+---
+
+## 🧠 How It Works
+
+- All tasks are stored in the `tasks` state array.
+- On mount, tasks are loaded from `localStorage`.
+- When tasks change (add/edit/delete/toggle), they are saved back to localStorage.
+- Tasks are split into two lists: active and completed.
+- Validation ensures inputs contain at least 3 letters and 1 alphabet.
+
+---
+
+## ✅ Future Improvements
+
+- [ ] Add "Clear Completed" button
+- [ ] Add task filtering (All, Active, Completed)
+- [ ] Add due dates and reminders
+- [ ] Theme toggle (Dark/Light)
+
+---
+
+## 📸 Screenshot
+
+_Add your screenshot here if available_
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## ✨ Acknowledgments
+
+Made with ❤️ using React & Tailwind CSS.
