@@ -40,7 +40,7 @@ src/
 ### 1. Clone this repository
 
 ```bash
-git clone https://github.com/your-username/react-todo-app.git
+git clone https://github.com/AKHILJOY312/Todo-List-with-React.git
 cd react-todo-app
 ```
 
@@ -76,12 +76,6 @@ Open `http://localhost:5173` in your browser.
 - [ ] Add task filtering (All, Active, Completed)
 - [ ] Add due dates and reminders
 - [ ] Theme toggle (Dark/Light)
-
----
-
-## 📸 Screenshot
-
-_Add your screenshot here if available_
 
 ---
 
