@@ -42,11 +42,19 @@ export default function App() {
       setError("Task must contain at least 3 letters");
       return;
     }
+    const taskRepeat = tasks.some(
+      (task) => task.text.toLowerCase() === trimmed.toLowerCase()
+    );
+    if (taskRepeat) {
+      setError("Task must not repeat.");
+      return;
+    }
 
     const newTask = {
       id: Date.now(),
       text: trimmed,
       completed: false,
+      createdAt: Date.now(),
     };
 
     setTasks([newTask, ...tasks]);
